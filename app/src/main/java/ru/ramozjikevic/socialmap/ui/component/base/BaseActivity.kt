@@ -11,7 +11,8 @@ import ru.ramozjikevic.socialmap.ui.component.base.viewmodel.BaseRxViewModel
 import ru.ramozjikevic.socialmap.ui.component.base.viewmodel.IViewModelState
 import javax.inject.Inject
 
-abstract class BaseActivity<T : BaseRxViewModel<out IViewModelState>> : AppCompatActivity(), HasAndroidInjector {
+abstract class BaseActivity<T : BaseRxViewModel<out IViewModelState>> : AppCompatActivity(),
+    HasAndroidInjector {
 
     protected abstract val layout: Int
     protected abstract val viewModel: T
