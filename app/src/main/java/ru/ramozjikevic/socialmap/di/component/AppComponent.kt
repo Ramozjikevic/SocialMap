@@ -5,13 +5,17 @@ import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
 import ru.ramozjikevic.socialmap.App
+import ru.ramozjikevic.socialmap.di.module.ActivityModule
+import ru.ramozjikevic.socialmap.di.module.scheduler.SchedulersModule
 import ru.ramozjikevic.socialmap.di.module.viewmodel.ViewModelModule
 import javax.inject.Singleton
 
 @Component(
     modules = [
         AndroidSupportInjectionModule::class,
-        ViewModelModule::class
+        ViewModelModule::class,
+        ActivityModule::class,
+        SchedulersModule::class
     ]
 )
 @Singleton
