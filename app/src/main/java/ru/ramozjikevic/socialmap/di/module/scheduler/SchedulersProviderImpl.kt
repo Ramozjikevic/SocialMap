@@ -1,4 +1,4 @@
-package ru.ramozjikevic.socialmap.di.scheduler
+package ru.ramozjikevic.socialmap.di.module.scheduler
 
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
